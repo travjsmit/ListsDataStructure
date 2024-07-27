@@ -26,7 +26,16 @@ namespace ListsDataStructure
         /// </summary>
         public void Append(int value)
         {
+            IncreaseCapacity();
             list[size++] = value;
+        }
+
+        private void IncreaseCapacity()
+        {
+            if (size == list.Length) // We need to expand
+            {
+                int[] newArray = new int[size + 10];
+            }
         }
     }
 }
