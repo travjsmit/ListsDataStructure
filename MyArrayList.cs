@@ -34,7 +34,7 @@ namespace ListsDataStructure
         {
             if (size == list.Length) // We need to expand
             {
-                int[] newArray = new int[size + 10];
+                int[] newArray = new int[size * 2];
             }
         }
     }
