@@ -8,17 +8,19 @@ namespace ListsDataStructure
 {
     public class MyArrayList
     {
-        public int[] list;
-        int size = 0;
+        public int[] _list;
+        int _size = 0;
+        public int Size { get { return _size; } }
+        public int[] List { get { return _list; } }
 
         public MyArrayList()
         {
-            list = new int[10];
+            _list = new int[10];
         }
 
          public MyArrayList(int size)
         {
-            list = new int[size];
+            _list = new int[size];
         }
 
         /// <summary>
@@ -27,14 +29,20 @@ namespace ListsDataStructure
         public void Append(int value)
         {
             IncreaseCapacity();
-            list[size++] = value;
+            _list[_size++] = value;
         }
 
         private void IncreaseCapacity()
         {
-            if (size == list.Length) // We need to expand
+            if (_size == _list.Length) // We need to expand
             {
-                int[] newArray = new int[size * 2];
+                // Creates new array as dynamic list changes
+                int[] newArray = new int[_size * 2];
+                for(int i = 0; i < _size; i++)
+                {
+                    newArray[i] = _list[i]; 
+                }                          
+                _list = newArray;           
             }
         }
     }
