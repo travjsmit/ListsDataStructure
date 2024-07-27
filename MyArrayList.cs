@@ -34,15 +34,14 @@ namespace ListsDataStructure
 
         private void IncreaseCapacity()
         {
-            if (_size == _list.Length) // We need to expand
+            if (_size == _list.Length) return;  
+            int[] newArray = new int[_size * 2];
+            for(int i = 0; i < _size; i++)
             {
-                // Creates new array as dynamic list changes
-                int[] newArray = new int[_size * 2];
-                for(int i = 0; i < _size; i++)
-                {
-                    newArray[i] = _list[i]; 
-                }                          
-                _list = newArray;           
+                newArray[i] = _list[i]; 
+            }   
+            
+            _list = newArray;           
             }
         }
     }
