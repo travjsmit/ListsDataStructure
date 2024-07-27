@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Hello, World!");
 
-            int[] arr = { 54, 41, 87, 65, 45, 3, 2, 1, 90, 43};
+            int[] arr = { 54, 43, 41, 87, 65, 45, 3, 2, 1, 90, 43, 43};
 
             List<int> arr1 = arr.Append(2).ToList ();
 
@@ -15,7 +15,7 @@
             arr1.Add(2);
             PrintArray(arr);
             PrintArray(arrString);
-            Console.WriteLine(arr1.Contains(41));
+            PrintArray(arr1.Where(x => x == 43).ToArray());
 
         }
         public static void PrintArray<T>(T[] arr)
