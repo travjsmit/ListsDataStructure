@@ -5,6 +5,10 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListsDataStructure", "ListsDataStructure.csproj", "{E4E2B3EA-42A3-4AEC-BE84-A8B78AB46CC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListDataStructureTests", "..\ListDataStructureTests\ListDataStructureTests.csproj", "{91E76BB8-8704-4514-80EB-F512F4317D55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListsDataStructureTests", "..\ListsDataStructureTests\ListsDataStructureTests.csproj", "{8D4CC8B2-0339-444E-A7A2-0960810B0F93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{E4E2B3EA-42A3-4AEC-BE84-A8B78AB46CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4E2B3EA-42A3-4AEC-BE84-A8B78AB46CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4E2B3EA-42A3-4AEC-BE84-A8B78AB46CC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91E76BB8-8704-4514-80EB-F512F4317D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E76BB8-8704-4514-80EB-F512F4317D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E76BB8-8704-4514-80EB-F512F4317D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E76BB8-8704-4514-80EB-F512F4317D55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D4CC8B2-0339-444E-A7A2-0960810B0F93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D4CC8B2-0339-444E-A7A2-0960810B0F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D4CC8B2-0339-444E-A7A2-0960810B0F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D4CC8B2-0339-444E-A7A2-0960810B0F93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
