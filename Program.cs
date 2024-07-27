@@ -8,11 +8,11 @@
 
             int[] arr = { 54, 41, 87, 65, 45, 3, 2, 1, 90, 43};
 
-            IEnumerable<int> arr1 = arr.Append(2);
+            List<int> arr1 = arr.Append(2).ToList ();
 
             string[] arrString = { "Hello", "World", "Hi" };
 
-            arr1.Append(2);
+            arr1.Add(2);
             PrintArray(arr);
             PrintArray(arrString);
             PrintArray(arr1.ToArray());
@@ -22,7 +22,7 @@
         {
             foreach(T i in arr)
             { 
-                Console.WriteLine(i + " ");
+                Console.Write(i + " ");
             }
             Console.WriteLine();
         }
