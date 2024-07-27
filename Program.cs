@@ -15,7 +15,7 @@
             arr1.Add(2);
             PrintArray(arr);
             PrintArray(arrString);
-            PrintArray(arr1.ToArray());
+            Console.WriteLine(arr1.Contains(41));
 
         }
         public static void PrintArray<T>(T[] arr)
